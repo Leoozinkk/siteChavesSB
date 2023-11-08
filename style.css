@@ -22,7 +22,7 @@ body{
     padding: 5%;
 }
 
-.col-md{
+.col{
     text-align: center;
 }
 
@@ -36,10 +36,10 @@ body{
     src: url(HappySans.ttf) format(truetype);
 }
 
-@media (max-width: 768px){
+@media (max-width: 859px){
     .soundsimg{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     #sbtext{
