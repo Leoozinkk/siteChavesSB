@@ -22,10 +22,6 @@ body{
     padding: 5%;
 }
 
-.row{
-    justify-content: space-between;
-}
-
 .col-md{
     text-align: center;
 }

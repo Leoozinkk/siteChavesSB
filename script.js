@@ -12,6 +12,7 @@ var btn7 = document.getElementById("button7");
 var btn8 = document.getElementById("button8");
 var btn9 = document.getElementById("button9");
 var btn10 = document.getElementById("button10");
+var btn11 = document.getElementById("button11");
 var botaoMute = document.getElementById('btnmute');
 
 //audios separados
@@ -25,6 +26,7 @@ var mamae3 = document.getElementById("mamae3");
 var naonao = document.getElementById("naonao");
 var churros = document.getElementById("churros");
 var falamalnao = document.getElementById("falamalnao");
+var jatenho = document.getElementById("jatenho");
 
 btn1.onclick = function(){
     voltarDoZero();
@@ -63,7 +65,12 @@ btn9.onclick = function(){
     churros.play();
 }
 btn10.onclick = function(){
+    voltarDoZero();
     naonao.play();
+}
+btn11.onclick = function(){
+    voltarDoZero();
+    jatenho.play();
 }
 btnmute.onclick = function(){
     voltarDoZero();
