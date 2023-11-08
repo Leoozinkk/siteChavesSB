@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Chaves Soundboard</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container-fluid" id="header">
+        <img src="images/logo.png" alt="Logo Chaves" id="logo">
+        <h1 id="sbtext">MEME SOUNDBOARD</h1>
+    </div>
+    <!--audios para pôr no javascript-->
+    <audio src="sounds/NOSSA.mp3" class="sound" id="nossa"></audio>
+    <audio src="sounds/VamosComeçarAntesQue.mp3" class="sound" id="vamoscomeçar"></audio>
+    <audio src="sounds/AiChaves.mp3" class="sound" id="aichaves"></audio>
+    <audio src="sounds/Hahahahah.mp3" class="sound" id="hahaha"></audio>
+    <audio src="sounds/MamãeQuerida1.mp3" class="sound" id="mamae1"></audio>
+    <audio src="sounds/MamãeQuerida2.mp3" class="sound" id="mamae2"></audio>
+    <audio src="sounds/MamãeQuerida3.mp3" class="sound" id="mamae3"></audio>
+    <audio src="sounds/NãoNão.mp3" class="sound" id="naonao"></audio>
+    <audio src="sounds/churros.mp3" class="sound" id="churros"></audio>
+    <audio src="sounds/FalaMalDaMinhaMãeNão.mp3" class="sound" id="falamalnao"></audio>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md">
+              <img src="images/NOSSA.png" alt="Seu Madruga Nossa" class="soundsimg"><br>
+              <button type="button" class="btn btn-light btn-block" id="button1">NOSSA!</button>
+            </div>
+            <div class="col-md">
+              <img src="images/VamosComeçarAntesQue.png" alt="Girafales Vamos Começar" class="soundsimg"><br>
+              <button type="button" class="btn btn-light btn-block" id="button2">Vamos começar antes que esfrie, ahn?</button>
+            </div>
+            <div class="col-md">
+              <img src="images/AiChaves.png" alt="Ai Chaves" class="soundsimg"><br>
+              <button type="button" class="btn btn-light btn-block"id="button3">Ai Chaves, ai Chavinho</button>
+            </div>
+            <div class="col-md">
+              <img src="images/Hahahahah.png" alt="Chaves Rindo" class="soundsimg"><br>
+              <button type="button" class="btn btn-light btn-block" id="button4">Hahahahah</button>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <img src="images/MamãeQuerida1.png" alt="Mamãe Querida 1" class="soundsimg"><br>
+            <button type="button" class="btn btn-light btn-block" id="button5">Mamãe querida, meu coração por ti bate 1</button>
+          </div>
+          <div class="col-md">
+            <img src="images/MamãeQuerida2.png" alt="Mamãe Querida 2" class="soundsimg"><br>
+            <button type="button" class="btn btn-light btn-block" id="button6">Mamãe querida, meu coração por ti bate 2</button>
+          </div>
+          <div class="col-md">
+            <img src="images/MamãeQuerida3.png" alt="Mamãe Querida 3" class="soundsimg"><br>
+            <button type="button" class="btn btn-light btn-block" id="button7">Mamãe querida, meu coração por ti bate 3</button>
+          </div>
+          <div class="col-md">
+            <img src="images/FalaMalDaMinhaMaeNao.png" alt="Chaves Cego" class="soundsimg"><br>
+            <button type="button" class="btn btn-light btn-block" id="button8">Fala mal da minha mãe não, ô FDP</button>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <img src="images/churros.png" alt="Seu Madruga Churros" class="soundsimg"><br>
+          <button type="button" class="btn btn-light btn-block" id="button9">Churros, churros</button>
+        </div>
+        <div class="col-md">
+          <img src="images/nãonão.jpg" alt="Chaves Cego" class="soundsimg"><br>
+          <button type="button" class="btn btn-light btn-block" id="button10">Não, não</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container" id="mute">
+        <button type="button" class="btn btn-danger btn-lg btn-block" id="btnmute">Mutar todos os sons</button>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

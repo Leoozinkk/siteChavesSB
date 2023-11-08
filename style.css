@@ -1,0 +1,60 @@
+body{
+    background-image: url(images/background.jpg);
+    padding-bottom: 1%;
+}
+
+#header{
+    padding: 1%;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+}
+
+#sbtext{
+    color: rgb(255, 125, 0);
+    font-size: 50px;
+    font-family: 'happysans', sans-serif;
+}
+
+.soundsimg{
+    width: 400px;
+    height: 400px;
+    padding: 5%;
+}
+
+.row{
+    justify-content: space-between;
+}
+
+.col-md{
+    text-align: center;
+}
+
+#mute{
+    padding-top: 1%;
+    width: 700px;
+}
+
+@font-face {
+    font-family: 'happysans';
+    src: url(HappySans.ttf) format(truetype);
+}
+
+@media (max-width: 768px){
+    .soundsimg{
+        width: 200px;
+        height: 200px;
+    }
+
+    #sbtext{
+        font-size: 40px;
+    }
+
+    #mute{
+        width: 100%;
+    }
+
+    #logo{
+        width: 200px;
+    }
+}
