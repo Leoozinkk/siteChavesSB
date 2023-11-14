@@ -35,6 +35,9 @@ var orelhas = document.getElementById("orelhas");
 var tremendodedmedo = document.getElementById("tremendodemedo");
 var sabemqueserve = document.getElementById("sabemqueserve");
 
+// todos os elementos de audio
+var som = document.querySelectorAll('audio');
+
 btn1.onclick = function(){
     voltarDoZero();
     nossa.play();
@@ -100,15 +103,19 @@ btn16.onclick = function(){
     sabemqueserve.play();
 }
 btnmute.onclick = function(){
-    voltarDoZero();
+    for (var i = 0; i < som.length; i++) {
+        som[i].pause();
+        som[i].currentTime = 0;
+    }
 }
 
 function voltarDoZero() {
-    // todos os elementos de audio
-    var som = document.querySelectorAll('audio');
-    
-    for (var i = 0; i < som.length; i++) {
-        som[i].pause(); //pausar o som onde ele está
-        som[i].currentTime = 0; //voltar o som do zero
+    var checkbox_parar = document.getElementById('opcaoParar'); //checkbox de parar os sons
+
+    if (checkbox_parar.checked) {
+        for (var i = 0; i < som.length; i++) {
+            som[i].pause(); // pausar o som onde ele está
+            som[i].currentTime = 0; // voltar o som do zero
+        }
     }
-}
+};
