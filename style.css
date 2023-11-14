@@ -1,10 +1,9 @@
 body{
     background-image: url(images/background.jpg);
-    padding-bottom: 1%;
 }
 
 #header{
-    padding: 1%;
+    padding: 0.5%;
     width: 100%;
     background-color: green;
     text-align: center;
@@ -29,6 +28,11 @@ body{
 #mute{
     padding-top: 1%;
     width: 700px;
+}
+
+#parar{
+    width: fit-content;
+    margin: 1%;
 }
 
 @font-face {
