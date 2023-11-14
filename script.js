@@ -1,39 +1,43 @@
 //pegar os botões pelo id
-var btn1 = document.getElementById("button1");
-var btn2 = document.getElementById("button2");
-var btn3 = document.getElementById("button3");
-var btn4 = document.getElementById("button4");
-var btn5 = document.getElementById("button5");
-var btn6 = document.getElementById("button6");
-var btn7 = document.getElementById("button7");
-var btn8 = document.getElementById("button8");
-var btn9 = document.getElementById("button9");
-var btn10 = document.getElementById("button10");
-var btn11 = document.getElementById("button11");
-var btn12 = document.getElementById("button12");
-var btn13 = document.getElementById("button13");
-var btn14 = document.getElementById("button14");
-var btn15 = document.getElementById("button15");
-var btn16 = document.getElementById("button16");
+var btn1 = document.getElementById('button1');
+var btn2 = document.getElementById('button2');
+var btn3 = document.getElementById('button3');
+var btn4 = document.getElementById('button4');
+var btn5 = document.getElementById('button5');
+var btn6 = document.getElementById('button6');
+var btn7 = document.getElementById('button7');
+var btn8 = document.getElementById('button8');
+var btn9 = document.getElementById('button9');
+var btn10 = document.getElementById('button10');
+var btn11 = document.getElementById('button11');
+var btn12 = document.getElementById('button12');
+var btn13 = document.getElementById('button13');
+var btn14 = document.getElementById('button14');
+var btn15 = document.getElementById('button15');
+var btn16 = document.getElementById('button16');
+var btn17 = document.getElementById('button17');
+var btn18 = document.getElementById('button18');
 var botaoMute = document.getElementById('btnmute');
 
 //audios separados
-var nossa = document.getElementById("nossa");
-var vamosComecar = document.getElementById("vamoscomeçar");
-var aiChaves = document.getElementById("aichaves");
-var hahaha = document.getElementById("hahaha");
-var mamae1 = document.getElementById("mamae1");
-var mamae2 = document.getElementById("mamae2");
-var mamae3 = document.getElementById("mamae3");
-var naonao = document.getElementById("naonao");
-var churros = document.getElementById("churros");
-var falamalnao = document.getElementById("falamalnao");
-var jatenho = document.getElementById("jatenho");
-var discovoador = document.getElementById("discovoador");
-var pirulito = document.getElementById("pirulito");
-var orelhas = document.getElementById("orelhas");
-var tremendodedmedo = document.getElementById("tremendodemedo");
-var sabemqueserve = document.getElementById("sabemqueserve");
+var nossa = document.getElementById('nossa');
+var vamosComecar = document.getElementById('vamoscomeçar');
+var aiChaves = document.getElementById('aichaves');
+var hahaha = document.getElementById('hahaha');
+var mamae1 = document.getElementById('mamae1');
+var mamae2 = document.getElementById('mamae2');
+var mamae3 = document.getElementById('mamae3');
+var naonao = document.getElementById('naonao');
+var churros = document.getElementById('churros');
+var falamalnao = document.getElementById('falamalnao');
+var jatenho = document.getElementById('jatenho');
+var discovoador = document.getElementById('discovoador');
+var pirulito = document.getElementById('pirulito');
+var orelhas = document.getElementById('orelhas');
+var tremendodedmedo = document.getElementById('tremendodemedo');
+var sabemqueserve = document.getElementById('sabemqueserve');
+var cebc = document.getElementById('cebc');
+var cebm = document.getElementById('cebm');
 
 // todos os elementos de audio
 var som = document.querySelectorAll('audio');
@@ -101,6 +105,14 @@ btn15.onclick = function(){
 btn16.onclick = function(){
     voltarDoZero();
     sabemqueserve.play();
+}
+btn17.onclick = function(){
+    voltarDoZero();
+    cebc.play();
+}
+btn18.onclick = function(){
+    voltarDoZero();
+    cebm.play();
 }
 btnmute.onclick = function(){
     for (var i = 0; i < som.length; i++) {
