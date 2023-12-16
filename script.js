@@ -1,133 +1,40 @@
-//pegar os botões pelo id
-var btn1 = document.getElementById('button1');
-var btn2 = document.getElementById('button2');
-var btn3 = document.getElementById('button3');
-var btn4 = document.getElementById('button4');
-var btn5 = document.getElementById('button5');
-var btn6 = document.getElementById('button6');
-var btn7 = document.getElementById('button7');
-var btn8 = document.getElementById('button8');
-var btn9 = document.getElementById('button9');
-var btn10 = document.getElementById('button10');
-var btn11 = document.getElementById('button11');
-var btn12 = document.getElementById('button12');
-var btn13 = document.getElementById('button13');
-var btn14 = document.getElementById('button14');
-var btn15 = document.getElementById('button15');
-var btn16 = document.getElementById('button16');
-var btn17 = document.getElementById('button17');
-var btn18 = document.getElementById('button18');
-var botaoMute = document.getElementById('btnmute');
+//identifica cada botão pela posição dele no html e executa os audios pela sua posição, também, no html 
+document.getElementsByTagName('button')[0].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[0].play()};
+document.getElementsByTagName('button')[1].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[1].play()};
+document.getElementsByTagName('button')[2].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[2].play()};
+document.getElementsByTagName('button')[3].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[3].play()};
+document.getElementsByTagName('button')[4].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[4].play()};
+document.getElementsByTagName('button')[5].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[5].play()};
+document.getElementsByTagName('button')[6].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[6].play()};
+document.getElementsByTagName('button')[7].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[7].play()};
+document.getElementsByTagName('button')[8].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[8].play()};
+document.getElementsByTagName('button')[9].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[9].play()};
+document.getElementsByTagName('button')[10].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[10].play()};
+document.getElementsByTagName('button')[11].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[11].play()};
+document.getElementsByTagName('button')[12].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[12].play()};
+document.getElementsByTagName('button')[13].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[13].play()};
+document.getElementsByTagName('button')[14].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[14].play()};
+document.getElementsByTagName('button')[15].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[15].play()};
+document.getElementsByTagName('button')[16].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[16].play()};
+document.getElementsByTagName('button')[17].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[17].play()};
+//botão de mute
+document.getElementById('btnmute').onclick = function(){parar()};
 
-//audios separados
-var nossa = document.getElementById('nossa');
-var vamosComecar = document.getElementById('vamoscomeçar');
-var aiChaves = document.getElementById('aichaves');
-var hahaha = document.getElementById('hahaha');
-var mamae1 = document.getElementById('mamae1');
-var mamae2 = document.getElementById('mamae2');
-var mamae3 = document.getElementById('mamae3');
-var naonao = document.getElementById('naonao');
-var churros = document.getElementById('churros');
-var falamalnao = document.getElementById('falamalnao');
-var jatenho = document.getElementById('jatenho');
-var discovoador = document.getElementById('discovoador');
-var pirulito = document.getElementById('pirulito');
-var orelhas = document.getElementById('orelhas');
-var tremendodedmedo = document.getElementById('tremendodemedo');
-var sabemqueserve = document.getElementById('sabemqueserve');
-var cebc = document.getElementById('cebc');
-var cebm = document.getElementById('cebm');
-
-// todos os elementos de audio
+//todos os elementos de áudio
 var som = document.querySelectorAll('audio');
 
-btn1.onclick = function(){
-    voltarDoZero();
-    nossa.play();
-}
-btn2.onclick = function(){
-    voltarDoZero();
-    vamosComecar.play();
-}
-btn3.onclick = function(){
-    voltarDoZero();
-    aiChaves.play();
-}
-btn4.onclick = function(){
-    voltarDoZero();
-    hahaha.play();
-}
-btn5.onclick = function(){
-    voltarDoZero();
-    mamae1.play();
-}
-btn6.onclick = function(){
-    voltarDoZero();
-    mamae2.play();
-}
-btn7.onclick = function(){
-    voltarDoZero();
-    mamae3.play();
-}
-btn8.onclick = function(){
-    voltarDoZero();
-    falamalnao.play();
-}
-btn9.onclick = function(){
-    voltarDoZero();
-    churros.play();
-}
-btn10.onclick = function(){
-    voltarDoZero();
-    naonao.play();
-}
-btn11.onclick = function(){
-    voltarDoZero();
-    jatenho.play();
-}
-btn12.onclick = function(){
-    voltarDoZero();
-    discovoador.play();
-}
-btn13.onclick = function(){
-    voltarDoZero();
-    pirulito.play();
-}
-btn14.onclick = function(){
-    voltarDoZero();
-    orelhas.play();
-}
-btn15.onclick = function(){
-    voltarDoZero();
-    tremendodedmedo.play();
-}
-btn16.onclick = function(){
-    voltarDoZero();
-    sabemqueserve.play();
-}
-btn17.onclick = function(){
-    voltarDoZero();
-    cebc.play();
-}
-btn18.onclick = function(){
-    voltarDoZero();
-    cebm.play();
-}
-btnmute.onclick = function(){
-    for (var i = 0; i < som.length; i++) {
-        som[i].pause();
-        som[i].currentTime = 0;
-    }
-}
-
+//função que faz os audios pararem apenas se a checkbox estiver verificada (usado nos botões com áudio)
 function voltarDoZero() {
     var checkbox_parar = document.getElementById('opcaoParar'); //checkbox de parar os sons
-
     if (checkbox_parar.checked) {
-        for (var i = 0; i < som.length; i++) {
-            som[i].pause(); // pausar o som onde ele está
-            som[i].currentTime = 0; // voltar o som do zero
-        }
+        parar()
+    }
+};
+
+//função q faz todos os áudios pararem (usado no botão de mute)
+function parar(){
+    for (var i = 0; i < som.length; i++) {
+        som[i].pause(); //pausar o som onde ele está
+        som[i].currentTime = 0; //voltar o som do zero
     }
 };
