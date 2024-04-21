@@ -1,14 +1,3 @@
-var img = document.createElement('img');
-img.src = 'images/luiz3.png';
-img.style = 'widht: 350px; height: 350px; margin: 5%; border: 5px solid black'
-var src = document.getElementsByClassName('imagemLuiz');
-
-for (var i = 0; i < src.length; i++) {
-    src[i].appendChild(img.cloneNode());
-}
-//verifica o número de espaços para pôr a foto e as aplica em todos
-//quando se usa "getElementsByClassName", o "appendChild" não serve para todos os espaços no documento (apenas para um)
-
 //pega o botão pelo id e executa os audios de acordo com a posição no html
 document.getElementById('gio').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[0].play()};
 document.getElementById('gioD').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[1].play()};
