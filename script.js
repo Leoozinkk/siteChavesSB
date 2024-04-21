@@ -74,7 +74,7 @@ let timer;
 
 botaoSegurar.addEventListener('touchstart', () => {
 	timer = setTimeout(() => {
-		if(document.getElementById('botaoluiz') == null){
+		if(document.getElementById('botaoLuiz') == null){
 			criarBotao();
 		}
 	}, 5000);
