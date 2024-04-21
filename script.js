@@ -39,44 +39,47 @@ function parar(){
     }
 };
 
-//SEÇÃO DO LUIZ VIADO CAGOU NO ALAMBRADO
+/* SEÇÃO DO LUIZ VIADO CAGOU NO ALAMBRADO*/
 const buttonContainer = document.getElementById('luiz');
-const requiredKeys = ['KeyP', 'KeyA', 'KeyU', 'KeyL', 'KeyO', 'KeyE', 'KeyS', 'KeyC', 'KeyO', 'KeyB', 'KeyR', 'KeyA', 'KeyN', 'KeyO']; //as teclas que tem que apertar
-let pressedKeys = [];
 sfx = document.getElementsByTagName('audio')[18];
 sfx.volume  = .15;
 
 function criarBotao(){
+	sfx.play();
 	const button = document.createElement('button');
 	button.className = 'btn btn-primary';
 	button.id = 'botaoLuiz';
 	button.textContent = 'Luiz Mode';
 	buttonContainer.style.display  = 'block';
 	buttonContainer.appendChild(button);
-	sfx.play();
-}//cria o botão e toca o efeitinho se a condicional for cumprida
+};
+
+//PARA PC
+const requiredKeys = ['KeyP', 'KeyA', 'KeyU', 'KeyL', 'KeyO', 'KeyE', 'KeyS', 'KeyC', 'KeyO', 'KeyB', 'KeyR', 'KeyA', 'KeyN', 'KeyO']; //as teclas que tem que apertar
+let pressedKeys = [];
 
 document.addEventListener('keydown', (event) => {
 	pressedKeys.push(event.code);
 	if (pressedKeys.length > requiredKeys.length) {
 		pressedKeys.shift();
 	} //faz a tecla pressionada ter o seu valor salvo na lista "pressedKeys" e remove as teclas antigas
-if (pressedKeys.toString() === requiredKeys.toString() && document.getElementById('botaoLuiz') == null /*para evitar que tenha mais de um botão*/){
+	if (pressedKeys.toString() === requiredKeys.toString() && document.getElementById('botaoLuiz') == null /*para evitar que tenha mais de um botão*/){
 		criarBotao();
-	}
+	} //cria o botão e toca o efeitinho se a condicional for cumprida
 });
 
-const logo = document.getElementById('logo');
-const input = document.getElementById('inputCelular');
-let tapCount = 0;
+//PARA CELULAR
+botaoSegurar = document.getElementById("hold");
+let timer;
 
-logo.addEventListener('touchend', ()=>{
-	tapCount++;
-	if (tapCount === 3 && document.getElementById('botaoLuiz') == null){
-		input.focus();
-		tapCount = 0;
-		if(input.toString() == "pauloescobrano" || input.toString() == "paulo escobrano"){
+botaoSegurar.addEventListener('touchstart', () => {
+	timer = setTimeout(() => {
+		if(document.getElementById('botaoluiz') == null){
 			criarBotao();
 		}
-	}
+	}, 5000);
+});
+
+botaoSegurar.addEventListener('touchend', () => {
+	clearTimeout(timer);
 });
