@@ -1,9 +1,14 @@
+::-webkit-scrollbar-track{
+    border-radius: 100%;
+}
+
 body{
     background-image: url(images/background.jpg);
 }
 
 #header{
-    padding: 0.5%;
+    padding-top: 1%;
+    padding-bottom: .25%;
     width: 100%;
     background-color: green;
     text-align: center;
@@ -19,10 +24,16 @@ body{
     width: 400px;
     height: 400px;
     padding: 5%;
+    margin: auto;
 }
 
 .col{
     text-align: center;
+}
+
+.btn-light{
+    max-width: 450px;
+    margin: auto;
 }
 
 #mute{
@@ -35,15 +46,23 @@ body{
     margin: 1%;
 }
 
+#botaoLuiz{
+    margin-bottom: 1%;
+}
+
 @font-face {
     font-family: 'happysans';
     src: url(HappySans.ttf) format(truetype);
 }
 
-@media (max-width: 859px){
+@media (max-width: 855px){
     .soundsimg{
         width: 250px;
         height: 250px;
+    }
+
+    #header{
+        padding-top: 2%;
     }
 
     #sbtext{
