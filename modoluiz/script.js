@@ -14,7 +14,11 @@ document.getElementById('vaisefuderluiz').onclick = function(){voltarDoZero(), d
 document.getElementById('mamonas').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[12].play()}; 
 document.getElementById('cagou').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[13].play()}; 
 document.getElementById('viado').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[14].play()}; 
-document.getElementById('hitler').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[15].play()}; 
+document.getElementById('hitler').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[15].play()};
+document.getElementById('antonio').onclick  = function(){voltarDoZero(), document.getElementsByTagName('audio')[16].play()};
+document.getElementById('crazy').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[17].play()};
+document.getElementById('julia').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[18].play()};
+document.getElementById('sinais').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[19].play()};
 
 //botão de mute
 document.getElementById('btnmute').onclick = function(){parar()};
