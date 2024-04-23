@@ -42,7 +42,7 @@ function parar(){
 /* SEÇÃO DO LUIZ VIADO CAGOU NO ALAMBRADO*/
 const buttonContainer = document.getElementById('luiz');
 sfx = document.getElementsByTagName('audio')[18];
-sfx.volume  = .15;
+sfx.volume  = .35;
 
 function criarBotao(){
 	sfx.play();
