@@ -11,6 +11,10 @@ document.getElementById('xtudo').onclick = function(){voltarDoZero(), document.g
 document.getElementById('calica').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[9].play()};
 document.getElementById('ia').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[10].play()}
 document.getElementById('vaisefuderluiz').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[11].play()};
+document.getElementById('mamonas').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[12].play()}; 
+document.getElementById('cagou').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[13].play()}; 
+document.getElementById('viado').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[14].play()}; 
+document.getElementById('hitler').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[15].play()}; 
 
 //botão de mute
 document.getElementById('btnmute').onclick = function(){parar()};
