@@ -19,10 +19,14 @@ document.getElementById('antonio').onclick  = function(){voltarDoZero(), documen
 document.getElementById('crazy').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[17].play()};
 document.getElementById('julia').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[18].play()};
 document.getElementById('sinais').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[19].play()};
-document.getElementById('loleza').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[20].play()};
+document.getElementById('loleza2').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[20].play()};
 document.getElementById('lolezaR').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[21].play()};
 document.getElementById('chorando').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[22].play()};
 document.getElementById('cagano').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[23].play()};
+document.getElementById('loleza1').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[24].play()};
+document.getElementById('cecato').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[25].play()};
+document.getElementById('bomdia').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[26].play()};
+document.getElementById('musica').onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[27].play()};
 
 //botão de mute
 document.getElementById('btnmute').onclick = function(){parar()};
