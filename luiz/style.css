@@ -19,12 +19,32 @@
 }
 
 .container-fluid{
+    padding-top: 30px;
     background-color: #0f690f;
     max-width: 2000px;
 }
 
+#disclaimer{
+    margin: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 1100px;
+    background-color: white;
+    font-size: 1.3rem;
+    border: gray 5px solid;
+    text-align: center;
+    padding: 2px;
+}
+
+#atencao{
+    color: red;
+    font-size: 2.2rem;
+}
+
 .col{
-    padding: 2%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -71,6 +91,16 @@ footer{
 }
 
 @media (max-width: 855px){
+    #disclaimer{
+        width: 300px;
+        font-size: 1rem;
+        padding: 1px;
+    }
+
+    #atencao{
+        font-size: 1.5rem;
+    }
+
     #header{
         padding-top: 2%;
     }
@@ -89,6 +119,11 @@ footer{
     }
 
     #mute{
+        margin: 1%;
         width: auto;
+    }
+
+    #voltar{
+        margin: 1%;
     }
 }
