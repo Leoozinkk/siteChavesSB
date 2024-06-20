@@ -50,7 +50,7 @@ button.btn-success:hover{
 footer{
     margin: auto;
     text-align: center;
-    padding-top: 3%;
+    padding-top: 30px;
     background-color: #0f690f;
     max-width: 2000px;
 }
