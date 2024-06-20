@@ -44,18 +44,24 @@ button.btn-light:hover{
     color: white;
 }
 
+footer{
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    max-width: 2000px;
+}
+
 #mute{
-    padding-top: 1%;
+    margin: 1%;
     width: 700px;
 }
 
 #parar{
     width: fit-content;
-    padding: 1%;
 }
 
 #botaoLuiz{
-    margin-bottom: 1%;
+    margin: 1%;
 }
 
 @font-face {
