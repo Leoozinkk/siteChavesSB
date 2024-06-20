@@ -17,11 +17,10 @@ document.getElementsByTagName('button')[14].onclick = function(){voltarDoZero(),
 document.getElementsByTagName('button')[15].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[15].play()};
 document.getElementsByTagName('button')[16].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[16].play()};
 document.getElementsByTagName('button')[17].onclick = function(){voltarDoZero(), document.getElementsByTagName('audio')[17].play()};
-//botão de mute
-document.getElementById('btnmute').onclick = function(){parar()};
 
-//todos os elementos de áudio
-var som = document.querySelectorAll('audio');
+document.getElementById('btnmute').onclick = function(){parar()}; //botão de mute
+
+var som = document.querySelectorAll('audio'); //todos os elementos de áudio
 
 //função que faz os audios pararem apenas se a checkbox estiver verificada (usado nos botões com áudio)
 function voltarDoZero() {

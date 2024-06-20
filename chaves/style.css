@@ -2,14 +2,10 @@
     border-radius: 100%;
 }
 
-body{
-    background-image: url(images/background.jpg);
-}
-
 #header{
     padding-top: 1%;
     padding-bottom: .25%;
-    width: 100%;
+    max-width: 100%;
     background-color: green;
     text-align: center;
 }
@@ -20,6 +16,11 @@ body{
     font-family: 'happysans', sans-serif;
 }
 
+#main{
+    background-image: url(images/background.jpg);
+    max-width: 2000px;
+}
+
 .soundsimg{
     width: 400px;
     height: 400px;
@@ -28,12 +29,19 @@ body{
 }
 
 .col{
+    padding: 2%;
     text-align: center;
 }
 
 .btn-light{
     max-width: 450px;
     margin: auto;
+}
+
+button.btn-light:hover{
+    background-color: #2196f3;
+    border-color: #2196f3;
+    color: white;
 }
 
 #mute{
@@ -43,7 +51,7 @@ body{
 
 #parar{
     width: fit-content;
-    margin: 1%;
+    padding: 1%;
 }
 
 #botaoLuiz{
