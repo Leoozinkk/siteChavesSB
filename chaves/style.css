@@ -58,10 +58,11 @@ footer{
 
 #parar{
     width: fit-content;
+    margin-bottom: 1%;
 }
 
 #botaoLuiz{
-    margin: 1%;
+    margin-bottom: 1%;
 }
 
 @font-face {
